@@ -1,0 +1,401 @@
+{
+  "n_explained": 1500,
+  "importance": [
+    {
+      "feature": "hours_studied",
+      "label": "Hours studied per week",
+      "mean_abs_shap": 0.11982648391505014,
+      "mean_shap_high": -0.047955007381536616,
+      "mean_abs_shap_high": 0.10954592029700279
+    },
+    {
+      "feature": "absences",
+      "label": "Absences",
+      "mean_abs_shap": 0.09587648680229613,
+      "mean_shap_high": -0.05869832378512567,
+      "mean_abs_shap_high": 0.13624677961922468
+    },
+    {
+      "feature": "attendance",
+      "label": "Attendance %",
+      "mean_abs_shap": 0.038689930232923685,
+      "mean_shap_high": -0.0026435753453950012,
+      "mean_abs_shap_high": 0.04223983483202847
+    },
+    {
+      "feature": "G2",
+      "label": "Period-2 grade",
+      "mean_abs_shap": 0.03401804038008932,
+      "mean_shap_high": 0.02083403545968785,
+      "mean_abs_shap_high": 0.0417376811438594
+    },
+    {
+      "feature": "tutoring_sessions",
+      "label": "Tutoring sessions",
+      "mean_abs_shap": 0.02081896997475182,
+      "mean_shap_high": -0.011294363944851329,
+      "mean_abs_shap_high": 0.01820460687680917
+    },
+    {
+      "feature": "parental_involvement",
+      "label": "Parental involvement",
+      "mean_abs_shap": 0.020801301457042298,
+      "mean_shap_high": -0.013258310631760329,
+      "mean_abs_shap_high": 0.018388213696960642
+    },
+    {
+      "feature": "visited_resources",
+      "label": "Resources visited",
+      "mean_abs_shap": 0.01970857891296165,
+      "mean_shap_high": 0.01508157654599974,
+      "mean_abs_shap_high": 0.021741083014233706
+    },
+    {
+      "feature": "previous_scores",
+      "label": "Previous scores",
+      "mean_abs_shap": 0.019676467179362733,
+      "mean_shap_high": -0.013763091861367385,
+      "mean_abs_shap_high": 0.016358405928558622
+    },
+    {
+      "feature": "internet_access",
+      "label": "Internet access",
+      "mean_abs_shap": 0.018912963865386656,
+      "mean_shap_high": -0.014509566006045674,
+      "mean_abs_shap_high": 0.016532837699469564
+    },
+    {
+      "feature": "lunch",
+      "label": "Lunch type",
+      "mean_abs_shap": 0.017450732664051935,
+      "mean_shap_high": 0.01438679460665846,
+      "mean_abs_shap_high": 0.022422616103913967
+    },
+    {
+      "feature": "study_time",
+      "label": "Weekly study time",
+      "mean_abs_shap": 0.01702797710542198,
+      "mean_shap_high": 0.00437707206547666,
+      "mean_abs_shap_high": 0.020734175224499385
+    },
+    {
+      "feature": "motivation_level",
+      "label": "Motivation level",
+      "mean_abs_shap": 0.015378268877231423,
+      "mean_shap_high": -0.011114402385537913,
+      "mean_abs_shap_high": 0.013910948958147205
+    },
+    {
+      "feature": "sleep_hours",
+      "label": "Sleep hours",
+      "mean_abs_shap": 0.014730423024720118,
+      "mean_shap_high": -0.010382497252308978,
+      "mean_abs_shap_high": 0.012298597846715902
+    },
+    {
+      "feature": "test_prep",
+      "label": "Test preparation",
+      "mean_abs_shap": 0.01300366670021565,
+      "mean_shap_high": 0.008851114226047795,
+      "mean_abs_shap_high": 0.01643302347824827
+    },
+    {
+      "feature": "source=StudentFactors",
+      "label": "Record type: Student-factors survey",
+      "mean_abs_shap": 0.012397257950510715,
+      "mean_shap_high": -0.009162789992759917,
+      "mean_abs_shap_high": 0.01044833286806801
+    },
+    {
+      "feature": "family_income",
+      "label": "Family income",
+      "mean_abs_shap": 0.012138509795952311,
+      "mean_shap_high": -0.009352631889267606,
+      "mean_abs_shap_high": 0.0106274772817231
+    },
+    {
+      "feature": "parental_support",
+      "label": "Parental support",
+      "mean_abs_shap": 0.012017190737732825,
+      "mean_shap_high": 0.0023752461384263135,
+      "mean_abs_shap_high": 0.012475364030909911
+    },
+    {
+      "feature": "G1",
+      "label": "Period-1 grade",
+      "mean_abs_shap": 0.010414176042914114,
+      "mean_shap_high": 0.007735654549967625,
+      "mean_abs_shap_high": 0.01345270567246452
+    },
+    {
+      "feature": "gender",
+      "label": "Gender",
+      "mean_abs_shap": 0.007944943465589984,
+      "mean_shap_high": 0.0002641681434144074,
+      "mean_abs_shap_high": 0.007844709333858819
+    },
+    {
+      "feature": "raisedhands",
+      "label": "Times raised hand",
+      "mean_abs_shap": 0.007352485960464871,
+      "mean_shap_high": 0.004787947707949827,
+      "mean_abs_shap_high": 0.00850752929062771
+    },
+    {
+      "feature": "Fedu",
+      "label": "Father's education",
+      "mean_abs_shap": 0.005437681241423412,
+      "mean_shap_high": -0.00415346464848818,
+      "mean_abs_shap_high": 0.007309241095538892
+    },
+    {
+      "feature": "tutoring",
+      "label": "Tutoring (0 = no, 1 = yes)",
+      "mean_abs_shap": 0.005364529042057384,
+      "mean_shap_high": 0.0009119293449123813,
+      "mean_abs_shap_high": 0.0049515134536718556
+    },
+    {
+      "feature": "discussion",
+      "label": "Discussion posts",
+      "mean_abs_shap": 0.005153958745748798,
+      "mean_shap_high": 0.003238083971518878,
+      "mean_abs_shap_high": 0.006366692927986825
+    },
+    {
+      "feature": "parental_education",
+      "label": "Parental education",
+      "mean_abs_shap": 0.003290061476340614,
+      "mean_shap_high": -0.0007516088943218951,
+      "mean_abs_shap_high": 0.0034105241804952276
+    },
+    {
+      "feature": "Medu",
+      "label": "Mother's education",
+      "mean_abs_shap": 0.0031930185899970657,
+      "mean_shap_high": -0.0023122709524103333,
+      "mean_abs_shap_high": 0.004058576150600101
+    },
+    {
+      "feature": "source=PerfScores",
+      "label": "Record type: Standardized-test background",
+      "mean_abs_shap": 0.0028452130678465783,
+      "mean_shap_high": 7.747020766323362e-05,
+      "mean_abs_shap_high": 0.0025483643082624663
+    },
+    {
+      "feature": "age",
+      "label": "Age",
+      "mean_abs_shap": 0.0024802200652091224,
+      "mean_shap_high": -0.0015644295371655395,
+      "mean_abs_shap_high": 0.0021698800816024183
+    },
+    {
+      "feature": "failures",
+      "label": "Past failures",
+      "mean_abs_shap": 0.002228133954707033,
+      "mean_shap_high": -0.002236469993432906,
+      "mean_abs_shap_high": 0.003109508653146303
+    },
+    {
+      "feature": "announcements_view",
+      "label": "Announcements viewed",
+      "mean_abs_shap": 0.001966421796744447,
+      "mean_shap_high": -2.0051805721064705e-05,
+      "mean_abs_shap_high": 0.0009563657745783819
+    },
+    {
+      "feature": "source=StudentPerf",
+      "label": "Record type: GPA and study-habit records",
+      "mean_abs_shap": 0.0017213510808461222,
+      "mean_shap_high": -0.0002379224099071715,
+      "mean_abs_shap_high": 0.0018631889365223978
+    },
+    {
+      "feature": "source=StudentGrades",
+      "label": "Record type: Secondary-school period grades",
+      "mean_abs_shap": 0.001412269956781955,
+      "mean_shap_high": -0.0011933831449890324,
+      "mean_abs_shap_high": 0.0019011930624920975
+    },
+    {
+      "feature": "absence_days",
+      "label": "Absence days",
+      "mean_abs_shap": 0.0008244481438713928,
+      "mean_shap_high": -0.0010394760253208577,
+      "mean_abs_shap_high": 0.0012151856202721855
+    },
+    {
+      "feature": "topic=it",
+      "label": "Course topic: it",
+      "mean_abs_shap": 0.00022281061117602555,
+      "mean_shap_high": -0.0002781547329360619,
+      "mean_abs_shap_high": 0.0003219423698032525
+    },
+    {
+      "feature": "stage",
+      "label": "School stage",
+      "mean_abs_shap": 0.00021636562165012506,
+      "mean_shap_high": -0.0002886436803603469,
+      "mean_abs_shap_high": 0.0003078873250069822
+    },
+    {
+      "feature": "topic=english",
+      "label": "Course topic: english",
+      "mean_abs_shap": 0.00010488305002223903,
+      "mean_shap_high": -0.00013845993728402918,
+      "mean_abs_shap_high": 0.00014819369175517847
+    },
+    {
+      "feature": "topic=french",
+      "label": "Course topic: french",
+      "mean_abs_shap": 9.588668939340683e-05,
+      "mean_shap_high": -0.00011557864040443567,
+      "mean_abs_shap_high": 0.00013239166080157843
+    },
+    {
+      "feature": "topic=science",
+      "label": "Course topic: science",
+      "mean_abs_shap": 8.891001194390138e-05,
+      "mean_shap_high": -0.00011412474875390517,
+      "mean_abs_shap_high": 0.0001285140923999119
+    },
+    {
+      "feature": "topic=history",
+      "label": "Course topic: history",
+      "mean_abs_shap": 8.617880131619396e-05,
+      "mean_shap_high": -0.00010353404759719492,
+      "mean_abs_shap_high": 0.0001232889211776809
+    },
+    {
+      "feature": "topic=chemistry",
+      "label": "Course topic: chemistry",
+      "mean_abs_shap": 8.04275005695497e-05,
+      "mean_shap_high": -9.80468184036703e-05,
+      "mean_abs_shap_high": 0.0001199152715762298
+    },
+    {
+      "feature": "topic=spanish",
+      "label": "Course topic: spanish",
+      "mean_abs_shap": 7.634223534650282e-05,
+      "mean_shap_high": -8.521515482742981e-05,
+      "mean_abs_shap_high": 0.00010116058214649465
+    },
+    {
+      "feature": "topic=arabic",
+      "label": "Course topic: arabic",
+      "mean_abs_shap": 7.597825101765467e-05,
+      "mean_shap_high": 4.626967632672958e-05,
+      "mean_abs_shap_high": 8.433212097899956e-05
+    },
+    {
+      "feature": "source=xAPI",
+      "label": "Record type: LMS engagement records",
+      "mean_abs_shap": 7.377117484689974e-05,
+      "mean_shap_high": -8.104756099817078e-05,
+      "mean_abs_shap_high": 0.00010903225408526964
+    },
+    {
+      "feature": "topic=biology",
+      "label": "Course topic: biology",
+      "mean_abs_shap": 7.042785751815794e-05,
+      "mean_shap_high": -9.109569220201654e-05,
+      "mean_abs_shap_high": 9.739840480985834e-05
+    },
+    {
+      "feature": "topic=math",
+      "label": "Course topic: math",
+      "mean_abs_shap": 5.6326898255949266e-05,
+      "mean_shap_high": -6.672093762162873e-05,
+      "mean_abs_shap_high": 8.076792638767082e-05
+    },
+    {
+      "feature": "topic=geology",
+      "label": "Course topic: geology",
+      "mean_abs_shap": 5.076543256427989e-05,
+      "mean_shap_high": -6.220254950394914e-05,
+      "mean_abs_shap_high": 7.60018314706628e-05
+    },
+    {
+      "feature": "topic=quran",
+      "label": "Course topic: quran",
+      "mean_abs_shap": 1.8278923200631983e-05,
+      "mean_shap_high": -2.5327526228216045e-05,
+      "mean_abs_shap_high": 2.596244322705845e-05
+    }
+  ],
+  "group_consistency": {
+    "gender": {
+      "groups": [
+        "female",
+        "male"
+      ],
+      "spearman_rho": 0.9933,
+      "top5_overlap": 4,
+      "top5": {
+        "female": [
+          "Absences",
+          "Hours studied per week",
+          "Period-2 grade",
+          "Attendance %",
+          "Lunch type"
+        ],
+        "male": [
+          "Absences",
+          "Hours studied per week",
+          "Attendance %",
+          "Period-2 grade",
+          "Weekly study time"
+        ]
+      }
+    },
+    "ses_group": {
+      "groups": [
+        "Low SES",
+        "Not low SES"
+      ],
+      "spearman_rho": 0.9979,
+      "top5_overlap": 4,
+      "top5": {
+        "Low SES": [
+          "Hours studied per week",
+          "Absences",
+          "Attendance %",
+          "Period-2 grade",
+          "Parental involvement"
+        ],
+        "Not low SES": [
+          "Hours studied per week",
+          "Absences",
+          "Attendance %",
+          "Period-2 grade",
+          "Lunch type"
+        ]
+      }
+    },
+    "age_group": {
+      "groups": [
+        "15 and above",
+        "Under 15"
+      ],
+      "spearman_rho": 0.7727,
+      "top5_overlap": 2,
+      "top5": {
+        "15 and above": [
+          "Absences",
+          "Hours studied per week",
+          "Attendance %",
+          "Period-2 grade",
+          "Lunch type"
+        ],
+        "Under 15": [
+          "Absences",
+          "Resources visited",
+          "Times raised hand",
+          "Hours studied per week",
+          "Discussion posts"
+        ]
+      }
+    }
+  }
+}

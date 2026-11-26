@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+*.pyc
+data/academic_risk.db
+.pytest_cache/
+.streamlit/secrets.toml

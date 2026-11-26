@@ -1,0 +1,616 @@
+{
+  "decision": "A student is flagged when the model predicts the High-risk class. Fairness is measured on this flag.",
+  "baseline": {
+    "gender": {
+      "groups": [
+        {
+          "group": "female",
+          "n": 1039,
+          "actual_high": 174,
+          "flagged_high": 190,
+          "selection_rate": 0.1829,
+          "high_recall": 0.8678,
+          "fnr": 0.1322,
+          "fpr": 0.0451,
+          "precision_high": 0.7947,
+          "f1_macro": 0.834,
+          "pred_low": 0.2079,
+          "pred_medium": 0.6092,
+          "pred_high": 0.1829
+        },
+        {
+          "group": "male",
+          "n": 1256,
+          "actual_high": 212,
+          "flagged_high": 253,
+          "selection_rate": 0.2014,
+          "high_recall": 0.8726,
+          "fnr": 0.1274,
+          "fpr": 0.0651,
+          "precision_high": 0.7312,
+          "f1_macro": 0.8347,
+          "pred_low": 0.1354,
+          "pred_medium": 0.6632,
+          "pred_high": 0.2014
+        }
+      ],
+      "gaps": {
+        "recall_gap": 0.0048,
+        "recall_gap_ci": [
+          0.0011,
+          0.0816
+        ],
+        "selection_rate_gap": 0.0186,
+        "selection_rate_gap_ci": [
+          0.0008,
+          0.0514
+        ]
+      }
+    },
+    "ses_group": {
+      "groups": [
+        {
+          "group": "Low SES",
+          "n": 614,
+          "actual_high": 39,
+          "flagged_high": 37,
+          "selection_rate": 0.0603,
+          "high_recall": 0.3846,
+          "fnr": 0.6154,
+          "fpr": 0.0383,
+          "precision_high": 0.4054,
+          "f1_macro": 0.5556,
+          "pred_low": 0.0635,
+          "pred_medium": 0.8762,
+          "pred_high": 0.0603
+        },
+        {
+          "group": "Not low SES",
+          "n": 907,
+          "actual_high": 32,
+          "flagged_high": 51,
+          "selection_rate": 0.0562,
+          "high_recall": 0.5625,
+          "fnr": 0.4375,
+          "fpr": 0.0377,
+          "precision_high": 0.3529,
+          "f1_macro": 0.6293,
+          "pred_low": 0.1058,
+          "pred_medium": 0.8379,
+          "pred_high": 0.0562
+        },
+        {
+          "group": "Unknown",
+          "n": 774,
+          "actual_high": 315,
+          "flagged_high": 355,
+          "selection_rate": 0.4587,
+          "high_recall": 0.9619,
+          "fnr": 0.0381,
+          "fpr": 0.1133,
+          "precision_high": 0.8535,
+          "f1_macro": 0.8505,
+          "pred_low": 0.3243,
+          "pred_medium": 0.2171,
+          "pred_high": 0.4587
+        }
+      ],
+      "gaps": {
+        "recall_gap": 0.1779,
+        "recall_gap_ci": [
+          0.0149,
+          0.4055
+        ],
+        "selection_rate_gap": 0.004,
+        "selection_rate_gap_ci": [
+          0.0006,
+          0.0314
+        ]
+      }
+    },
+    "age_group": {
+      "groups": [
+        {
+          "group": "15 and above",
+          "n": 2215,
+          "actual_high": 373,
+          "flagged_high": 429,
+          "selection_rate": 0.1937,
+          "high_recall": 0.8686,
+          "fnr": 0.1314,
+          "fpr": 0.057,
+          "precision_high": 0.7552,
+          "f1_macro": 0.8204,
+          "pred_low": 0.1485,
+          "pred_medium": 0.6578,
+          "pred_high": 0.1937
+        },
+        {
+          "group": "Under 15",
+          "n": 80,
+          "actual_high": 13,
+          "flagged_high": 14,
+          "selection_rate": 0.175,
+          "high_recall": 0.9231,
+          "fnr": 0.0769,
+          "fpr": 0.0299,
+          "precision_high": 0.8571,
+          "f1_macro": 0.863,
+          "pred_low": 0.7125,
+          "pred_medium": 0.1125,
+          "pred_high": 0.175
+        }
+      ],
+      "gaps": {
+        "recall_gap": 0.0544,
+        "recall_gap_ci": [
+          0.0011,
+          0.1746
+        ],
+        "selection_rate_gap": 0.0187,
+        "selection_rate_gap_ci": [
+          0.0016,
+          0.1141
+        ]
+      }
+    }
+  },
+  "mitigation": {
+    "gender": [
+      {
+        "method": "Baseline (no mitigation)",
+        "stage": "-",
+        "f1_macro": 0.8338,
+        "high_recall": 0.8705,
+        "recall_gap": 0.0048,
+        "recall_gap_ci": [
+          0.0011,
+          0.0816
+        ],
+        "selection_rate_gap": 0.0186,
+        "selection_rate_gap_ci": [
+          0.0008,
+          0.0514
+        ],
+        "groups": [
+          {
+            "group": "female",
+            "n": 1039,
+            "actual_high": 174,
+            "flagged_high": 190,
+            "selection_rate": 0.1829,
+            "high_recall": 0.8678,
+            "fnr": 0.1322,
+            "fpr": 0.0451,
+            "precision_high": 0.7947,
+            "f1_macro": 0.834,
+            "pred_low": 0.2079,
+            "pred_medium": 0.6092,
+            "pred_high": 0.1829
+          },
+          {
+            "group": "male",
+            "n": 1256,
+            "actual_high": 212,
+            "flagged_high": 253,
+            "selection_rate": 0.2014,
+            "high_recall": 0.8726,
+            "fnr": 0.1274,
+            "fpr": 0.0651,
+            "precision_high": 0.7312,
+            "f1_macro": 0.8347,
+            "pred_low": 0.1354,
+            "pred_medium": 0.6632,
+            "pred_high": 0.2014
+          }
+        ]
+      },
+      {
+        "method": "Reweighing",
+        "stage": "Pre-processing",
+        "f1_macro": 0.8325,
+        "high_recall": 0.8342,
+        "recall_gap": 0.0612,
+        "recall_gap_ci": [
+          0.0047,
+          0.1362
+        ],
+        "selection_rate_gap": 0.0149,
+        "selection_rate_gap_ci": [
+          0.0014,
+          0.0457
+        ],
+        "groups": [
+          {
+            "group": "female",
+            "n": 1039,
+            "actual_high": 174,
+            "flagged_high": 190,
+            "selection_rate": 0.1829,
+            "high_recall": 0.8678,
+            "fnr": 0.1322,
+            "fpr": 0.0451,
+            "precision_high": 0.7947,
+            "f1_macro": 0.8359,
+            "pred_low": 0.206,
+            "pred_medium": 0.6112,
+            "pred_high": 0.1829
+          },
+          {
+            "group": "male",
+            "n": 1256,
+            "actual_high": 212,
+            "flagged_high": 211,
+            "selection_rate": 0.168,
+            "high_recall": 0.8066,
+            "fnr": 0.1934,
+            "fpr": 0.0383,
+            "precision_high": 0.8104,
+            "f1_macro": 0.8291,
+            "pred_low": 0.1712,
+            "pred_medium": 0.6608,
+            "pred_high": 0.168
+          }
+        ]
+      },
+      {
+        "method": "Exponentiated Gradient (TPR parity)",
+        "stage": "In-processing",
+        "f1_macro": 0.822,
+        "high_recall": 0.9093,
+        "recall_gap": 0.0337,
+        "recall_gap_ci": [
+          0.0023,
+          0.0939
+        ],
+        "selection_rate_gap": 0.0082,
+        "selection_rate_gap_ci": [
+          0.0007,
+          0.0445
+        ],
+        "groups": [
+          {
+            "group": "female",
+            "n": 1039,
+            "actual_high": 174,
+            "flagged_high": 241,
+            "selection_rate": 0.232,
+            "high_recall": 0.8908,
+            "fnr": 0.1092,
+            "fpr": 0.0994,
+            "precision_high": 0.6432,
+            "f1_macro": 0.8085,
+            "pred_low": 0.1636,
+            "pred_medium": 0.6044,
+            "pred_high": 0.232
+          },
+          {
+            "group": "male",
+            "n": 1256,
+            "actual_high": 212,
+            "flagged_high": 281,
+            "selection_rate": 0.2237,
+            "high_recall": 0.9245,
+            "fnr": 0.0755,
+            "fpr": 0.0814,
+            "precision_high": 0.6975,
+            "f1_macro": 0.8334,
+            "pred_low": 0.125,
+            "pred_medium": 0.6513,
+            "pred_high": 0.2237
+          }
+        ]
+      },
+      {
+        "method": "Threshold Optimizer (equal opportunity)",
+        "stage": "Post-processing",
+        "f1_macro": 0.8214,
+        "high_recall": 0.9508,
+        "recall_gap": 0.0268,
+        "recall_gap_ci": [
+          0.0019,
+          0.0665
+        ],
+        "selection_rate_gap": 0.0464,
+        "selection_rate_gap_ci": [
+          0.0116,
+          0.0824
+        ],
+        "groups": [
+          {
+            "group": "female",
+            "n": 1039,
+            "actual_high": 174,
+            "flagged_high": 284,
+            "selection_rate": 0.2733,
+            "high_recall": 0.9655,
+            "fnr": 0.0345,
+            "fpr": 0.1341,
+            "precision_high": 0.5915,
+            "f1_macro": 0.8043,
+            "pred_low": 0.1569,
+            "pred_medium": 0.5698,
+            "pred_high": 0.2733
+          },
+          {
+            "group": "male",
+            "n": 1256,
+            "actual_high": 212,
+            "flagged_high": 285,
+            "selection_rate": 0.2269,
+            "high_recall": 0.9387,
+            "fnr": 0.0613,
+            "fpr": 0.0824,
+            "precision_high": 0.6982,
+            "f1_macro": 0.836,
+            "pred_low": 0.125,
+            "pred_medium": 0.6481,
+            "pred_high": 0.2269
+          }
+        ]
+      }
+    ],
+    "ses_group": [
+      {
+        "method": "Baseline (no mitigation)",
+        "stage": "-",
+        "f1_macro": 0.8338,
+        "high_recall": 0.8705,
+        "recall_gap": 0.1779,
+        "recall_gap_ci": [
+          0.0149,
+          0.4055
+        ],
+        "selection_rate_gap": 0.004,
+        "selection_rate_gap_ci": [
+          0.0006,
+          0.0314
+        ],
+        "groups": [
+          {
+            "group": "Low SES",
+            "n": 614,
+            "actual_high": 39,
+            "flagged_high": 37,
+            "selection_rate": 0.0603,
+            "high_recall": 0.3846,
+            "fnr": 0.6154,
+            "fpr": 0.0383,
+            "precision_high": 0.4054,
+            "f1_macro": 0.5556,
+            "pred_low": 0.0635,
+            "pred_medium": 0.8762,
+            "pred_high": 0.0603
+          },
+          {
+            "group": "Not low SES",
+            "n": 907,
+            "actual_high": 32,
+            "flagged_high": 51,
+            "selection_rate": 0.0562,
+            "high_recall": 0.5625,
+            "fnr": 0.4375,
+            "fpr": 0.0377,
+            "precision_high": 0.3529,
+            "f1_macro": 0.6293,
+            "pred_low": 0.1058,
+            "pred_medium": 0.8379,
+            "pred_high": 0.0562
+          },
+          {
+            "group": "Unknown",
+            "n": 774,
+            "actual_high": 315,
+            "flagged_high": 355,
+            "selection_rate": 0.4587,
+            "high_recall": 0.9619,
+            "fnr": 0.0381,
+            "fpr": 0.1133,
+            "precision_high": 0.8535,
+            "f1_macro": 0.8505,
+            "pred_low": 0.3243,
+            "pred_medium": 0.2171,
+            "pred_high": 0.4587
+          }
+        ]
+      },
+      {
+        "method": "Reweighing",
+        "stage": "Pre-processing",
+        "f1_macro": 0.8263,
+        "high_recall": 0.8575,
+        "recall_gap": 0.371,
+        "recall_gap_ci": [
+          0.1508,
+          0.595
+        ],
+        "selection_rate_gap": 0.0484,
+        "selection_rate_gap_ci": [
+          0.0155,
+          0.0764
+        ],
+        "groups": [
+          {
+            "group": "Low SES",
+            "n": 614,
+            "actual_high": 39,
+            "flagged_high": 38,
+            "selection_rate": 0.0619,
+            "high_recall": 0.4103,
+            "fnr": 0.5897,
+            "fpr": 0.0383,
+            "precision_high": 0.4211,
+            "f1_macro": 0.5628,
+            "pred_low": 0.0635,
+            "pred_medium": 0.8746,
+            "pred_high": 0.0619
+          },
+          {
+            "group": "Not low SES",
+            "n": 907,
+            "actual_high": 32,
+            "flagged_high": 100,
+            "selection_rate": 0.1103,
+            "high_recall": 0.7812,
+            "fnr": 0.2188,
+            "fpr": 0.0857,
+            "precision_high": 0.25,
+            "f1_macro": 0.5917,
+            "pred_low": 0.0595,
+            "pred_medium": 0.8302,
+            "pred_high": 0.1103
+          },
+          {
+            "group": "Unknown",
+            "n": 774,
+            "actual_high": 315,
+            "flagged_high": 319,
+            "selection_rate": 0.4121,
+            "high_recall": 0.9206,
+            "fnr": 0.0794,
+            "fpr": 0.0632,
+            "precision_high": 0.9091,
+            "f1_macro": 0.8748,
+            "pred_low": 0.2817,
+            "pred_medium": 0.3062,
+            "pred_high": 0.4121
+          }
+        ]
+      },
+      {
+        "method": "Exponentiated Gradient (TPR parity)",
+        "stage": "In-processing",
+        "f1_macro": 0.82,
+        "high_recall": 0.9197,
+        "recall_gap": 0.2139,
+        "recall_gap_ci": [
+          0.038,
+          0.3926
+        ],
+        "selection_rate_gap": 0.0445,
+        "selection_rate_gap_ci": [
+          0.0077,
+          0.0751
+        ],
+        "groups": [
+          {
+            "group": "Low SES",
+            "n": 614,
+            "actual_high": 39,
+            "flagged_high": 58,
+            "selection_rate": 0.0945,
+            "high_recall": 0.6923,
+            "fnr": 0.3077,
+            "fpr": 0.0539,
+            "precision_high": 0.4655,
+            "f1_macro": 0.5897,
+            "pred_low": 0.0342,
+            "pred_medium": 0.8713,
+            "pred_high": 0.0945
+          },
+          {
+            "group": "Not low SES",
+            "n": 907,
+            "actual_high": 32,
+            "flagged_high": 126,
+            "selection_rate": 0.1389,
+            "high_recall": 0.9062,
+            "fnr": 0.0938,
+            "fpr": 0.1109,
+            "precision_high": 0.2302,
+            "f1_macro": 0.528,
+            "pred_low": 0.0287,
+            "pred_medium": 0.8324,
+            "pred_high": 0.1389
+          },
+          {
+            "group": "Unknown",
+            "n": 774,
+            "actual_high": 315,
+            "flagged_high": 351,
+            "selection_rate": 0.4535,
+            "high_recall": 0.9492,
+            "fnr": 0.0508,
+            "fpr": 0.1133,
+            "precision_high": 0.8519,
+            "f1_macro": 0.8462,
+            "pred_low": 0.323,
+            "pred_medium": 0.2235,
+            "pred_high": 0.4535
+          }
+        ]
+      },
+      {
+        "method": "Threshold Optimizer (equal opportunity)",
+        "stage": "Post-processing",
+        "f1_macro": 0.8001,
+        "high_recall": 0.9793,
+        "recall_gap": 0.0256,
+        "recall_gap_ci": [
+          0.0,
+          0.0806
+        ],
+        "selection_rate_gap": 0.0458,
+        "selection_rate_gap_ci": [
+          0.0067,
+          0.0838
+        ],
+        "groups": [
+          {
+            "group": "Low SES",
+            "n": 614,
+            "actual_high": 39,
+            "flagged_high": 91,
+            "selection_rate": 0.1482,
+            "high_recall": 0.9744,
+            "fnr": 0.0256,
+            "fpr": 0.0922,
+            "precision_high": 0.4176,
+            "f1_macro": 0.5383,
+            "pred_low": 0.0114,
+            "pred_medium": 0.8404,
+            "pred_high": 0.1482
+          },
+          {
+            "group": "Not low SES",
+            "n": 907,
+            "actual_high": 32,
+            "flagged_high": 176,
+            "selection_rate": 0.194,
+            "high_recall": 1.0,
+            "fnr": 0.0,
+            "fpr": 0.1646,
+            "precision_high": 0.1818,
+            "f1_macro": 0.4597,
+            "pred_low": 0.0132,
+            "pred_medium": 0.7927,
+            "pred_high": 0.194
+          },
+          {
+            "group": "Unknown",
+            "n": 774,
+            "actual_high": 315,
+            "flagged_high": 383,
+            "selection_rate": 0.4948,
+            "high_recall": 0.9778,
+            "fnr": 0.0222,
+            "fpr": 0.1634,
+            "precision_high": 0.8042,
+            "f1_macro": 0.8222,
+            "pred_low": 0.3243,
+            "pred_medium": 0.1809,
+            "pred_high": 0.4948
+          }
+        ]
+      }
+    ]
+  },
+  "ethics_statement": [
+    "Predictions support, and never replace, the judgement of teachers and counsellors.",
+    "A High-risk flag should trigger an offer of help, not a penalty, label on a transcript, or change to admission or grading.",
+    "Sensitive attributes (gender, socio-economic status) are used only to audit fairness and, for post-processing, to equalise recall; they are never shown to staff as a reason for risk.",
+    "The training data combine five public datasets from different countries and grading systems; results may not transfer to a new institution without local validation.",
+    "Region was planned as a fairness attribute but is not present in the dataset; socio-economic status is audited instead.",
+    "Student records are stored with role-based access; predictions are logged for audit and can be deleted on request."
+  ]
+}

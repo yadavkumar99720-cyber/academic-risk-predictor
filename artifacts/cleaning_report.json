@@ -1,0 +1,28 @@
+{
+  "rows_in": 11523,
+  "columns_in": 40,
+  "category_values_standardized": 0,
+  "duplicates_removed": 51,
+  "placeholder_cells_marked_not_applicable": 239460,
+  "out_of_range_values_clipped": {
+    "exam_score": 1
+  },
+  "extreme_outliers_flagged_iqr3": {
+    "tutoring_sessions [StudentFactors]": 26
+  },
+  "missing_values_imputed": 0,
+  "rows_dropped_missing_label": 0,
+  "rows_out": 11472,
+  "risk_distribution": {
+    "Medium": 7959,
+    "High": 1927,
+    "Low": 1586
+  },
+  "rows_by_source": {
+    "StudentFactors": 6607,
+    "StudentPerf": 2392,
+    "StudentGrades": 999,
+    "PerfScores": 996,
+    "xAPI": 478
+  }
+}
